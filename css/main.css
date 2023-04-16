@@ -1,0 +1,58 @@
+:root{
+    --main-color: hsl(258, 98%, 26%);
+    --primaty-text-color:hsl(258, 8%, 90%);
+    --effect-color:hsl(258,70%,25%);
+}
+
+
+*{
+    font-family: "Lato";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a,p{
+    color: var(--primaty-text-color);
+}
+img{
+    width: 100%;
+}
+
+#header{
+    min-height:90vh;
+    background-image: url(../img/wp4729499-earth-4k-wallpapers.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+#inner-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#brand{
+    background-color: var(--main-color);
+    padding: 1rem;
+}
+
+#navbar{
+    display: flex;
+    gap: 4rem;
+    margin-right: 0rem;
+    margin-top: 0rem;
+    background-color: var(--main-color);
+}
+
+#navbar a{
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 150%;
+}
+
+#navbar a:hover{
+    background-color: var(--effect-color);
+}
+
