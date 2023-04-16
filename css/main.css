@@ -1,43 +1,51 @@
-:root{
+:root {
     --main-color: hsl(258, 98%, 26%);
-    --primaty-text-color:hsl(258, 8%, 90%);
-    --effect-color:hsl(258,70%,25%);
+    --primaty-text-color: hsl(258, 8%, 90%);
+    --effect-color: hsl(258, 70%, 25%);
 }
 
-
-*{
+* {
     font-family: "Lato";
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-a,p{
+a{
+    color: #161623;
+}
+p {
     color: var(--primaty-text-color);
 }
-img{
+
+img {
     width: 100%;
 }
 
-#header{
-    min-height:90vh;
+#header {
+    min-height: 100vh;
     background-image: url(../img/wp4729499-earth-4k-wallpapers.jpg);
     background-size: cover;
     background-position: center;
-    margin-bottom: 2rem;
+    /* margin-bottom: 0rem; */
     position: relative;
 }
-#inner-header{
+
+#inner-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#brand{
+#brand {
     background-color: var(--main-color);
     padding: 1rem;
 }
 
-#navbar{
+h1 {
+    color: aliceblue;
+}
+
+#navbar {
     display: flex;
     gap: 4rem;
     margin-right: 0rem;
@@ -45,14 +53,148 @@ img{
     background-color: var(--main-color);
 }
 
-#navbar a{
+#navbar a {
     font-weight: bold;
     text-decoration: none;
     padding: 1rem;
     font-size: 150%;
 }
 
-#navbar a:hover{
+#navbar a:hover {
     background-color: var(--effect-color);
 }
 
+.banner {
+    opacity: 1;
+    max-width: 50%;
+    padding: 4rem;
+    position: absolute;
+    transition: 1s;
+}
+
+.banner h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5rem;
+    /* margin-bottom: 1.2rem; */
+    position: absolute;
+    z-index: 3;
+    color: var(--primaty-text-color);
+    top: 100%;
+}
+
+.headerfoot {
+    display: flex;
+    margin-bottom: 30%;
+    margin-top: 40%;
+    margin-left: 12.5%;
+}
+
+.headerfoot p {
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+main
+{
+    /* Deixa no tamanho da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #161623;
+    
+    /*  */
+}
+main::before{
+    content: '';
+    position: absolute;
+    top: 1;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3,#f0f);
+    clip-path: circle(45% at right 100%);
+}
+
+main::after{
+    content: '';
+    position: absolute;
+    top: 1;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3,#f0f);
+    clip-path: circle(30% at 10% 10%);
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+.container .card{
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgb(0, 0, 0,0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-left: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(5px);
+}
+.container .card .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.container .card:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container .card .content h2{
+    position: absolute;
+    top: -80px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(255,255,255,0.05);
+    pointer-events: none;
+}
+.container .card .content h3{
+    font-size: 1.8EM;
+    color: #ffff;
+    z-index: 1;
+}
+.container .card .content p{
+    font-size: 1em;
+    color: #ffff;
+    font-weight: 300;
+
+}
+
+.container .card .content a{
+position: relative;
+display: inline-block;
+padding:   8px  20px;
+margin-top: 15px ;
+background: #151515;
+color:  #ffff;
+border-radius: 20px;
+text-decoration:  none;
+font-weight: 500;
+box-shadow:  0 5px 15px rgba(0, 0, 0, 0.2);
+
+}
