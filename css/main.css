@@ -178,8 +178,16 @@ main::after {
     font-weight: 300;
 
 }
-
-/* .container .card .content a {
+.container h1{
+    font-size: 3em;
+    color: var(--primary-text-color);
+}
+#pzinho{
+    font-size: 1.5em;
+    color: var(--primary-text-color);
+    text-align: center;
+}
+.container .card .content a {
     position: relative;
     display: inline-block;
     padding: 8px 20px;
@@ -191,4 +199,4 @@ main::after {
     font-weight: 500;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 
-} */
+}
