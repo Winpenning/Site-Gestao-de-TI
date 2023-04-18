@@ -2,6 +2,7 @@
     --main-color: hsl(258, 98%, 26%);
     --secondary-color:hsl(207, 90%, 54%);
     --primary-text-color: hsl(258, 8%, 90%);
+    --secondary-text-color: hsl(56, 100%, 52%);
     --background-color: hsl(268, 27%, 11%);
     --selected-background: hsl(270, 37%, 19%);
 }
@@ -104,6 +105,13 @@ main::before {
     background: linear-gradient(#2196f3, #f0f);
     clip-path: circle(45% at right 100%);
 }
+.header .banner-text{
+    margin-left:2%;
+    margin-right: 2%;
+}
+.header .banner{
+    margin-left: 2%;
+}
 
 main::after {
     content: '';
@@ -126,6 +134,23 @@ main::after {
     z-index: 1;
 }
 
+.container .founder{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 30px;
+    border-radius: 10%;
+}
+.container .name{
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+
+.container .title{
+    color: var(--secondary-text-color);
+    text-transform: uppercase;
+}
 .container .card {
     position: relative;
     width: 280px;
