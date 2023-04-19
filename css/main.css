@@ -5,10 +5,11 @@
     --secondary-text-color: hsl(56, 100%, 52%);
     --background-color: hsl(268, 27%, 11%);
     --selected-background: hsl(270, 37%, 19%);
+    --table: hsl(295, 14%, 15%);
 }
 
 * {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Nunito', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -95,6 +96,34 @@ main {
     background: var(--background-color);
 }
 
+.three{
+    margin: 5%;
+    align-items: center;
+    color: var(--primary-text-color);
+    z-index: 10;
+    font-size: 2em;
+    width: 100%;
+    height: 100%;
+}
+ 
+.three img{
+    border-radius: 10%;
+    width: 40%;
+    min-height: 430px;
+}
+
+.three table{
+    width: 100%;
+    border: 2px solid var(--table);
+}
+.three table thead{
+    text-align: center;
+    background-color: var(--table);
+}
+.three table tfoot{
+    background-color: var(--table);
+    color: var(--table);
+}
 main::before {
     content: '';
     position: absolute;
@@ -107,6 +136,7 @@ main::before {
 }
 .header .banner-text, .header .banner{
     width: 90%;
+    display: inline-block;
 }
 
 .container .phone{
@@ -252,5 +282,24 @@ main::after {
 .container .p-align{
     width: 120%;
     position: relative;
+    color: var(--primary-text-color);
+}
+
+footer{
+    height: 10vh;
+    width:100vw;
+    padding: 50px;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--background-color);
+}
+
+footer{
+    background-color: #2196f3;
+}
+footer div{
+    width: 100%;
+    text-align: center;
     color: var(--primary-text-color);
 }
